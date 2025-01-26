@@ -61,13 +61,13 @@ pie_fig_resale_by_flat_model = px.pie(
     df_select,
     values='resale_price',
     names='flat_model',
-    title="Resale Price By Town")
+    title="Resale Price By Flat Model")
 e.plotly_chart(pie_fig_resale_by_flat_model,use_container_width=True)
 f,g = st.columns(2)
-scatter_fig_resale_by_flat_model = px.scatter(
-    bb,
-    x=bb.values,
-    y=bb.index,
-    title="Resale Price By Flat Model")
-f.plotly_chart(scatter_fig_resale_by_flat_model,use_container_width=True)
+scatter_fig_resale_by_storey_range = px.scatter(
+    cc,
+    x=cc.values,
+    y=cc.index,
+    title="Resale Price By Storey Range")
+f.plotly_chart(scatter_fig_resale_by_storey_range,use_container_width=True)
 
